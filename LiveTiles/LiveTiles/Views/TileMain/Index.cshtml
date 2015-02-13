@@ -1,0 +1,77 @@
+﻿@model LiveTiles.Controllers.TileConfiguration
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    @if (Model.LayoutId == 1)
+    {
+        <div class="row">
+            <div class="col-md-6">
+
+                <script type="text/javascript">
+                    var myVar1 = setInterval(function () { getView1(); }, 3000);
+
+                    function getView1() {
+                        $('#divResult1').load("@Url.Action("GetView", "Home")");
+                    }
+                </script>
+
+                <div id='divResult1'>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <script type="text/javascript">
+                    var myVar2 = setInterval(function () { getView2(); }, 2000);
+
+                    function getView2() {
+                        $('#divResult2').load("@Url.Action("GetView", "Home")");
+                    }
+                </script>
+
+                <div id='divResult2'>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <script type="text/javascript">
+                    var myVar3 = setInterval(function () { getView3(); }, 4000);
+
+                    function getView3() {
+                        $('#divResult3').load("@Url.Action("GetView", "Home")");
+                    }
+                </script>
+
+                <div id='divResult3'>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <script type="text/javascript">
+                    var myVar4 = setInterval(function () { getView4(); }, 2500);
+
+                    function getView4() {
+                        $('#divResult4').load("@Url.Action("GetView", "Home")");
+                    }
+                </script>
+
+                <div id='divResult4'>
+
+                </div>
+            </div>
+        </div>
+    }
+
+</body>
+</html>
