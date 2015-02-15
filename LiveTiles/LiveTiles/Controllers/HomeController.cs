@@ -16,11 +16,11 @@ namespace LiveTiles.Controllers
             return View();
         }
 
-        public ActionResult GetView()
-        {
-            var o = new TileConfig { Time = DateTime.Now };
-            return PartialView("_TilePartialView", o);
-        }
+        //public ActionResult GetView()
+        //{
+        //    var o = new TileConfig { Time = DateTime.Now };
+        //    return PartialView("_TilePartialView", o);
+        //}
 
         public ActionResult About()
         {

@@ -21,7 +21,7 @@ namespace LiveTiles.Controllers
             return View(tileConfiguration);
         }
 
-        public ActionResult GetView()
+        public ActionResult GetView(object a)
         {
             var o = new TileConfig { Time = DateTime.Now };
             return PartialView("_TilePartialView", o);
