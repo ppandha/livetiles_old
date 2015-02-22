@@ -172,6 +172,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\background.jpg" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -192,6 +193,8 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Views\TileMain\notice1.htm" />
+    <Content Include="Views\TileMain\notice2.htm" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -229,12 +232,15 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\TileMain\Index.cshtml" />
     <Content Include="Views\Shared\_TilePartialView.cshtml">
-      <BrowseToURL> </BrowseToURL>
+      <BrowseToURL>
+      </BrowseToURL>
     </Content>
+    <Content Include="Views\Shared\_NoticeBoardTilePartialView.cshtml" />
+    <Content Include="Views\Shared\_NewsFeedTilePartialView.cshtml" />
+    <Content Include="Views\Shared\_CalendarTilePartialView.cshtml" />
+    <Content Include="Views\Shared\_TwitterTilePartialView.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
